@@ -1,0 +1,114 @@
+{
+	"id": "d7d98a64-bd95-4c18-b7fc-4e02436fcf0b",
+	"acceptMappedClaims": null,
+	"accessTokenAcceptedVersion": 2,
+	"addIns": [],
+	"allowPublicClient": null,
+	"appId": "78d74df3-f0fb-4606-a34c-2a55ffedde3a",
+	"appRoles": [
+		{
+			"allowedMemberTypes": [
+				"Application"
+			],
+			"description": "Readers have the ability to read tasks.",
+			"displayName": "Read",
+			"id": "093b88c5-6e7a-4a5b-9b39-5903d134faad",
+			"isEnabled": true,
+			"lang": null,
+			"origin": "Application",
+			"value": "app.read"
+		},
+		{
+			"allowedMemberTypes": [
+				"Application"
+			],
+			"description": "Writers have the ability to create tasks.",
+			"displayName": "Write",
+			"id": "fcbd617b-38c3-46b6-b5cb-80b26f114439",
+			"isEnabled": true,
+			"lang": null,
+			"origin": "Application",
+			"value": "app.write"
+		}
+	],
+	"oauth2AllowUrlPathMatching": false,
+	"createdDateTime": "2024-03-26T13:32:02Z",
+	"description": null,
+	"certification": null,
+	"disabledByMicrosoftStatus": null,
+	"groupMembershipClaims": null,
+	"identifierUris": [
+		"https://siddhantazb2c.onmicrosoft.com/secureid/api"
+	],
+	"informationalUrls": {
+		"termsOfService": null,
+		"support": null,
+		"privacy": null,
+		"marketing": null
+	},
+	"keyCredentials": [],
+	"knownClientApplications": [],
+	"logoUrl": null,
+	"logoutUrl": null,
+	"name": "SecureId WebAPI",
+	"notes": null,
+	"oauth2AllowIdTokenImplicitFlow": false,
+	"oauth2AllowImplicitFlow": false,
+	"oauth2Permissions": [
+		{
+			"adminConsentDescription": "write access",
+			"adminConsentDisplayName": "secureid.write",
+			"id": "a53e49c8-bcd0-44bb-925c-e86424bfc3ba",
+			"isEnabled": true,
+			"lang": null,
+			"origin": "Application",
+			"type": "Admin",
+			"userConsentDescription": null,
+			"userConsentDisplayName": null,
+			"value": "secureid.write"
+		},
+		{
+			"adminConsentDescription": "read access",
+			"adminConsentDisplayName": "secureid.read",
+			"id": "5e82e857-b2e7-4927-b64a-2a2a5da68c25",
+			"isEnabled": true,
+			"lang": null,
+			"origin": "Application",
+			"type": "Admin",
+			"userConsentDescription": null,
+			"userConsentDisplayName": null,
+			"value": "secureid.read"
+		}
+	],
+	"oauth2RequirePostResponse": false,
+	"optionalClaims": null,
+	"orgRestrictions": [],
+	"parentalControlSettings": {
+		"countriesBlockedForMinors": [],
+		"legalAgeGroupRule": "Allow"
+	},
+	"passwordCredentials": [],
+	"preAuthorizedApplications": [],
+	"publisherDomain": "siddhantazb2c.onmicrosoft.com",
+	"replyUrlsWithType": [],
+	"requiredResourceAccess": [
+		{
+			"resourceAppId": "00000003-0000-0000-c000-000000000000",
+			"resourceAccess": [
+				{
+					"id": "37f7f235-527c-4136-accd-4a02d197296e",
+					"type": "Scope"
+				},
+				{
+					"id": "7427e0e9-2fba-42fe-b0c0-848c9e6a8182",
+					"type": "Scope"
+				}
+			]
+		}
+	],
+	"samlMetadataUrl": null,
+	"signInUrl": null,
+	"signInAudience": "AzureADandPersonalMicrosoftAccount",
+	"tags": [],
+	"tokenEncryptionKeyId": null
+}

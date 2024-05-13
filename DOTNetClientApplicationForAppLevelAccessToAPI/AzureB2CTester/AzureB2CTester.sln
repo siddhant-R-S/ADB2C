@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureB2CTester", "AzureB2CTester\AzureB2CTester.csproj", "{93867C73-796C-4043-8CDA-4C964BEADCAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93867C73-796C-4043-8CDA-4C964BEADCAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93867C73-796C-4043-8CDA-4C964BEADCAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93867C73-796C-4043-8CDA-4C964BEADCAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93867C73-796C-4043-8CDA-4C964BEADCAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1987CF32-532D-4661-8649-932ACA060211}
+	EndGlobalSection
+EndGlobal
