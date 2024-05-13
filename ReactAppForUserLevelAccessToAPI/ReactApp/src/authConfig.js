@@ -81,7 +81,7 @@ export const msalConfig = {
  * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/resources-and-scopes.md
  */
 export const protectedResources = {
-    apiTodoList: {
+    apiWeatherForcast: {
         endpoint: 'https://localhost:7231/',
         scopes: {
             read: ['https://siddhantazb2c.onmicrosoft.com/secureid/api/secureid.read'],
@@ -97,5 +97,5 @@ export const protectedResources = {
  * https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#openid-connect-scopes
  */
 export const loginRequest = {
-    scopes: [...protectedResources.apiTodoList.scopes.read, ...protectedResources.apiTodoList.scopes.write],
+    scopes: [...protectedResources.apiWeatherForcast.scopes.read, ...protectedResources.apiWeatherForcast.scopes.write],
 };

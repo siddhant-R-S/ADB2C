@@ -6,26 +6,26 @@ import { ListView } from '../components/ListView';
 import { loginRequest, protectedResources } from "../authConfig";
 import useFetchWithMsal from '../hooks/useFetchWithMsal';
 
-const TodoListContent = () => {
+const WeatherForcastListContent = () => {
     const { error, execute } = useFetchWithMsal({
-        scopes: protectedResources.apiTodoList.scopes.read,
+        scopes: protectedResources.apiWeatherForcast.scopes.read,
     });
 
-    const [todoListData, setTodoListData] = useState(null);
+    const [weatherForcastListData, setWeatherForcastListData] = useState(null);
     
     useEffect(() => {
-        if (!todoListData) {
+        if (!weatherForcastListData) {
             execute("GET", "https://localhost:7231/WeatherForecast").then((response) => {
-                setTodoListData(response);
+                setWeatherForcastListData(response);
             });
         }
-    }, [execute, todoListData])
+    }, [execute, weatherForcastListData])
 
     if (error) {
         return <div>Error: {error.message}</div>;
     }
 
-    return <>{todoListData ? <p>{todoListData}</p> : null}</>;
+    return <>{weatherForcastListData ? <p>{weatherForcastListData}</p> : null}</>;
 };
 
 /**
@@ -35,7 +35,7 @@ const TodoListContent = () => {
  * authentication is in progress or a component to display if an error occurs. For more, visit:
  * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-react/docs/getting-started.md
  */
-export const TodoList = () => {
+export const WeatherForcastList = () => {
     const authRequest = {
         ...loginRequest,
     };
@@ -45,7 +45,7 @@ export const TodoList = () => {
             interactionType={InteractionType.Redirect} 
             authenticationRequest={authRequest}
         >
-            <TodoListContent />
+            <WeatherForcastListContent />
         </MsalAuthenticationTemplate>
     );
 };

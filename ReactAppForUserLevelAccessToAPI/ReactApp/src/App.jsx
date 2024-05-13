@@ -4,7 +4,7 @@ import { MsalProvider, useMsal } from '@azure/msal-react';
 import { EventType } from '@azure/msal-browser';
 
 import { PageLayout } from './components/PageLayout';
-import { TodoList } from './pages/TodoList';
+import { WeatherForcastList } from './pages/WeatherForcastList';
 import { Home } from './pages/Home';
 import { b2cPolicies, protectedResources } from './authConfig';
 import { compareIssuingPolicy } from './utils/claimUtils';
@@ -62,8 +62,8 @@ const Pages = () => {
                     let signUpSignInFlowRequest = {
                         authority: b2cPolicies.authorities.signUpSignIn.authority,
                         scopes: [
-                            ...protectedResources.apiTodoList.scopes.read,
-                            ...protectedResources.apiTodoList.scopes.write,
+                            ...protectedResources.apiWeatherForcast.scopes.read,
+                            ...protectedResources.apiWeatherForcast.scopes.write,
                         ],
                     };
                     instance.loginRedirect(signUpSignInFlowRequest);
@@ -93,7 +93,7 @@ const Pages = () => {
 
     return (
         <Routes>
-            <Route path="/weatherforcastlist" element={<TodoList />} />
+            <Route path="/weatherforcastlist" element={<WeatherForcastList />} />
             <Route path="/" element={<Home />} />
         </Routes>
     );
